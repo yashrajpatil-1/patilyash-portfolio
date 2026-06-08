@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash — Cloud & DevOps Engineer</title>
+  <meta name="description" content="Yash — Cloud & DevOps Engineer based in Pune, India. Building scalable, secure, and globally available cloud systems on AWS." />
+
+  <!-- Fonts: Space Grotesk (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <!-- ============================================================= -->
+  <!-- ANIMATED BACKGROUND — live aurora (only this layer moves)     -->
+  <!-- ============================================================= -->
+  <div class="bg" aria-hidden="true">
+    <div class="aurora">
+      <span class="aurora__band aurora__band--1"></span>
+      <span class="aurora__band aurora__band--2"></span>
+      <span class="aurora__band aurora__band--3"></span>
+      <span class="aurora__band aurora__band--4"></span>
+    </div>
+    <div class="bg-stars"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- LAYOUT WRAPPER                                                 -->
+  <!-- ============================================================= -->
+  <div class="layout">
+
+    <!-- ---------------- LEFT SIDEBAR ---------------- -->
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+        <div class="profile">
+          <div class="profile__photo">
+            <img src="assets/yash.jpg" alt="Portrait of Yash" width="640" height="640" />
+          </div>
+          <h1 class="profile__name">Yash</h1>
+          <p class="profile__role">Cloud &amp; DevOps Engineer</p>
+
+          <ul class="profile__meta">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.686-7-11a7 7 0 1 1 14 0c0 5.314-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span>Pune, India</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              <a href="tel:9503742562">9503742562</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav" aria-label="Section navigation">
+          <a class="nav__link" href="#summary" data-nav="summary"><span class="nav__dot"></span><span class="nav__label">Summary</span></a>
+          <a class="nav__link" href="#expertise" data-nav="expertise"><span class="nav__dot"></span><span class="nav__label">Technical Expertise</span></a>
+          <a class="nav__link" href="#projects" data-nav="projects"><span class="nav__dot"></span><span class="nav__label">Projects</span></a>
+          <a class="nav__link" href="#contact" data-nav="contact"><span class="nav__dot"></span><span class="nav__label">Contact</span></a>
+        </nav>
+
+        <p class="sidebar__footer">Designing for scale · AWS</p>
+      </div>
+    </aside>
+
+    <!-- ---------------- MAIN CONTENT ---------------- -->
+    <main class="content">
+
+      <!-- ===== SUMMARY (HERO) ===== -->
+      <section id="summary" class="section section--hero" data-reveal>
+        <p class="eyebrow" data-reveal>Professional Summary</p>
+        <h2 class="hero__title" data-reveal>
+          Building cloud systems that<br />
+          <span class="hero__accent">scale, stay secure &amp; stay online.</span>
+        </h2>
+        <div class="accent-line" data-reveal></div>
+        <p class="hero__lead" data-reveal>
+          I don't come from years of enterprise experience—I come from curiosity, persistence,
+          and hundreds of hours spent breaking and rebuilding cloud infrastructure to understand
+          how modern system architectures work. From configuring RDS databases to deploying
+          applications on EC2 and managing DNS with Route 53, I focus on learning through
+          implementation rather than theory. My goal is to evolve into a cloud engineer capable
+          of building scalable, secure, and globally available systems that serve real users at scale.
+        </p>
+
+        <div class="hero__stats" data-reveal>
+          <div class="stat"><span class="stat__num">8+</span><span class="stat__label">Hands-on Projects</span></div>
+          <div class="stat"><span class="stat__num">AWS</span><span class="stat__label">Core Focus</span></div>
+          <div class="stat"><span class="stat__num">∞</span><span class="stat__label">Hours Rebuilding</span></div>
+        </div>
+      </section>
+
+      <!-- ===== TECHNICAL EXPERTISE ===== -->
+      <section id="expertise" class="section">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Technical Expertise</p>
+          <h2 class="section__title">Skills built through implementation</h2>
+        </header>
+
+        <div class="cards-grid" id="expertiseGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Projects</p>
+          <h2 class="section__title">Real infrastructure, hands-on</h2>
+          <p class="section__sub">Hover a card to flip it and watch the story type itself out.</p>
+        </header>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Flip cards injected by JS -->
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Let's build something resilient</h2>
+        </header>
+
+        <div class="contact-card" data-reveal>
+          <a class="contact-item" href="https://maps.google.com/?q=Pune,Maharashtra,India" target="_blank" rel="noopener">
+            <span class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.686-7-11a7 7 0 1 1 14 0c0 5.314-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <span class="contact-item__body">
+              <span class="contact-item__label">Location</span>
+              <span class="contact-item__value">Pune, Maharashtra, India</span>
+            </span>
+          </a>
+
+          <a class="contact-item" href="tel:9503742562">
+            <span class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-item__body">
+              <span class="contact-item__label">Phone</span>
+              <span class="contact-item__value">9503742562</span>
+            </span>
+          </a>
+
+          <a class="contact-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=yashawsconsole@gmail.com" target="_blank" rel="noopener">
+            <span class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-item__body">
+              <span class="contact-item__label">Email</span>
+              <span class="contact-item__value">yashawsconsole@gmail.com</span>
+            </span>
+          </a>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/yash-patil-827431353/" target="_blank" rel="noopener">
+            <span class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-item__body">
+              <span class="contact-item__label">LinkedIn</span>
+              <span class="contact-item__value">Yash Patil</span>
+            </span>
+          </a>
+        </div>
+
+        <p class="footer-note">© <span id="year"></span> Yash · Cloud &amp; DevOps Engineer · Pune, India</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="portfolio.js" defer></script>
+</body>
+</html>
